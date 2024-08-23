@@ -1,15 +1,3 @@
-#include <boost/beast/core.hpp>
-#include <boost/beast/http.hpp>
-#include <boost/beast/websocket.hpp>
-#include <boost/beast/websocket/ssl.hpp>
-#include <boost/beast/version.hpp>
-#include <boost/asio/bind_executor.hpp>
-#include <boost/asio/dispatch.hpp>
-#include <boost/asio/signal_set.hpp>
-#include <boost/asio/ssl.hpp>
-#include <boost/asio/strand.hpp>
-#include <boost/make_unique.hpp>
-#include <boost/optional.hpp>
 #include <iostream>
 #include <memory>
 #include <queue>
@@ -20,14 +8,6 @@
 // Include the new headers
 #include "../include/util/server_certificate.hpp"
 #include "../include/http/listener.hpp"
-#include "../include/http/detect_session.hpp"
-#include "../include/http/plain_http_session.hpp"
-#include "../include/http/ssl_http_session.hpp"
-#include "../include/http/request_handler.hpp"
-#include "../include/websocket/plain_websocket_session.hpp"
-#include "../include/websocket/ssl_websocket_session.hpp"
-#include "../include/websocket/websocket_session.hpp"
-#include "../include/websocket/websocket_factory.hpp"
 
 int main(int argc, char* argv[])
 {
